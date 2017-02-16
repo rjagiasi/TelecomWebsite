@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+	box-sizing: border-box;
+}
+
+header {
+	height: 100px;
+	background-color: #ed7365;
+}
+
+#text_title {
+	font-family: monospace;
+	font-size: 35px;
+	padding: 30px;
+	float: left;
+}
+
+#logo {
+	height: 100%;
+	float: right;
+}
+
+[class*="col-"] {
+	float: left;
+	padding: 10px;
+	/*     border: 1px solid red; */
+}
+
+.col-1 {
+	width: 8.33%;
+}
+
+.col-2 {
+	width: 16.66%;
+}
+
+.col-3 {
+	width: 25%;
+}
+
+.col-4 {
+	width: 33.33%;
+}
+
+.col-5 {
+	width: 41.66%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-7 {
+	width: 58.33%;
+}
+
+.col-8 {
+	width: 66.66%;
+}
+
+.col-9 {
+	width: 75%;
+}
+
+.col-10 {
+	width: 83.33%;
+}
+
+.col-11 {
+	width: 91.66%;
+}
+
+.col-12 {
+	width: 100%;
+}
+
+nav {
+	margin: 0;
+	float: left;
+	height: 100%;
+}
+
+nav>ul {
+	padding-left: 0;
+}
+
+nav>ul>li {
+	list-style: none;
+	padding: 20%;
+	margin-top: 5%;
+	background-color: #65a0ed;
+	display: block;
+}
+
+img {
+	width: 33%;
+	padding: 1%;
+}
+
+@media only screen and (max-width: 480px) {
+	[class*="col-"] {
+		float: left;
+		padding: 10px;
+		width: 100%;
+	}
+	img {
+		width: 98%;
+		padding: 1%;
+	}
+	nav>ul>li {
+		padding: 5%;
+		margin-top: 1%;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 720px) {
+	[class*="col-"] {
+		float: left;
+		padding: 10px;
+		width: 100%;
+	}
+	img {
+		width: 48%;
+		padding: 1%;
+	}
+	nav>ul>li {
+		padding: 5%;
+		margin-top: 1%;
+	}
+}
+</style>
+</head>
+<body>
+
+	<header class="col-12">
+		<div class="col-9" id="text_title">Photos</div>
+		<img class="col-3" src="Barclays-PLC.png" id="logo">
+	</header>
+
+
+
+	<nav class="col-2">
+		<ul id="nav_bar">
+			<li>Home</li>
+			<li>About Us</li>
+			<li>Apple</li>
+			<li>Ball</li>
+			<li>Cat</li>
+		</ul>
+	</nav>
+
+	<div class="col-10">
+		<div id="content"></div>
+		<script type="text/javascript">
+			var string = "";
+			for (var i = 0; i < 20; i++) {
+				string += "<img src = \"http://assets.barcroftmedia.com.s3-website-eu-west-1.amazonaws.com/assets/images/recent-images-11.jpg\"/>";
+			}
+			document.getElementById('content').innerHTML = string;
+		</script>
+	</div>
+</body>
+</html>
