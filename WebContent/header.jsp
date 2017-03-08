@@ -21,9 +21,8 @@
 				<li>Prepaid</li>
 				<li>Postpaid</li>
 				<li>My Account</li>
-				<li>Pay Bills</li>
 				<li>Recharge</li>
-				<li>Offers</li>
+				<li><a href="contact.jsp">Contact</a></li>
 			</ul>
 		</nav>
 

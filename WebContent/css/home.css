@@ -130,3 +130,9 @@ footer {
 	}
 	
 }
+
+#map-canvas{
+	height: 300px;
+	width: 95%;
+	margin: 20px;
+}
