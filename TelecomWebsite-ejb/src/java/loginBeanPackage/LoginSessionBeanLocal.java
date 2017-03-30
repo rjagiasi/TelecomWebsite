@@ -5,6 +5,7 @@
  */
 package loginBeanPackage;
 
+import java.util.ArrayList;
 import javax.ejb.Local;
 
 /**
@@ -14,6 +15,6 @@ import javax.ejb.Local;
 @Local
 public interface LoginSessionBeanLocal {
 
-    Boolean checkLogin(String username, String password);
+    ArrayList<ArrayList<String>> checkLogin(String username, String password);
     
 }

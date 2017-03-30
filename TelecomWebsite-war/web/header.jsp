@@ -22,7 +22,7 @@
             <nav class="col-3 col-m-1 menu">
                 <ul>
                     <li><a href="index.jsp">Login</a></li>
-                    <li>New Connection</li>
+                    <li><a href="register.jsp">New Connection</a></li>
                     <!--				<li>Prepaid</li>
                                                     <li>Postpaid</li>
                                                     <li>My Account</li>

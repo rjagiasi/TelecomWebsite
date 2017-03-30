@@ -6,12 +6,15 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
+
 <%@ include file="header.jsp" %>
-	Hello
+	
         <form action="LoginServlet" method="post">
-            <input type="text" name="username"><br><br>
-            <input type="password" name="password"><br><br>
-            <input type="submit" value="Login">
+            <label for="username" class="col-4"><b>Phone No : </b></label>
+            <input type="text" name="username" id="username" class="col-8" placeholder="Phone Number">
+            <label for="password" class="col-4"><b>Password :</b></label>
+            <input type="password" name="password" id="password" class="col-8" placeholder="Password"><br><br>
+            <input type="submit" value="Login" class="col-12">
         </form>
 <%@ include file="footer.jsp" %>
 

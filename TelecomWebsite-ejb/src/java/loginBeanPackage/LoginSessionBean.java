@@ -5,6 +5,12 @@
  */
 package loginBeanPackage;
 
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.ejb.Stateless;
 
 /**
@@ -14,12 +20,21 @@ import javax.ejb.Stateless;
 @Stateless
 public class LoginSessionBean implements LoginSessionBeanLocal {
 
-    @Override
-    public Boolean checkLogin(String username, String password) {
-        if(username.equals("rohan") && password.equals("jagiasi")){
-            return true;
+    public ArrayList<ArrayList<String>> checkLogin(String username, String password) {
+        try {
+            DatabaseConn dc = new DatabaseConn();
+            ArrayList result = dc.query("Select * from users where PhoneNo = '" + username + "' and Password = '" + password + "'");
+            System.out.println(Arrays.deepToString(result.toArray()));
+            if(result.size() == 1){
+                return result;
+            }
+            return null;
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(LoginSessionBean.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(LoginSessionBean.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return false;
+        return null;
     }
 
     // Add business logic below. (Right-click in editor and choose
