@@ -13,19 +13,19 @@
 <%@ include file="header.jsp" %>
 
 <%
-    Cookie[] cookies = null;
-    cookies = request.getCookies();
-    int found = 0;
-    for (Cookie cookie : cookies) {
+    Cookie[] cookies_list = null;
+    cookies_list = request.getCookies();
+    int found_cookie = 0;
+    for (Cookie cookie : cookies_list) {
         if (cookie.getName().equals("name")) {
-            found = 1;
+            found_cookie = 1;
 %>
 <p>Welcome <%=cookie.getValue()%></p>
 <%
         }
     }
 
-    if (found == 0) {
+    if (found_cookie == 0) {
 %>
 <p>Incorrect Phone No or Password</p>
 <%

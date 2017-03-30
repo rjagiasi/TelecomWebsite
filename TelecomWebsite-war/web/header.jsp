@@ -21,7 +21,30 @@
         <div class="row" id="middle_section">
             <nav class="col-3 col-m-1 menu">
                 <ul>
+
+                    <%
+                        Cookie[] cookies = null;
+                        cookies = request.getCookies();
+                        int found = 0;
+                        if (cookies != null) {
+                            for (Cookie cookie : cookies) {
+                                if (cookie.getName().equals("name")) {
+                                    found = 1;
+                    %>
+                    <li><a href="Logout">Logout</a></li>
+                        <%
+                                    }
+                                }
+                            }
+
+                            if (found == 0) {
+                        %>
                     <li><a href="index.jsp">Login</a></li>
+                        <%
+                            }
+                        %>
+
+
                     <li><a href="register.jsp">New Connection</a></li>
                     <!--				<li>Prepaid</li>
                                                     <li>Postpaid</li>
