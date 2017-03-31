@@ -18,9 +18,9 @@ import java.util.List;
  *
  * @author rohan
  */
-class DatabaseConn {
+public class DatabaseConn {
 
-    ArrayList query(String queryString) throws ClassNotFoundException, SQLException {
+    public ArrayList query(String queryString) throws ClassNotFoundException, SQLException {
 
         Class.forName("com.mysql.jdbc.Driver");
         Connection con = DriverManager.getConnection(
@@ -44,6 +44,17 @@ class DatabaseConn {
         con.close();
         System.out.println(Arrays.deepToString(table.toArray()));
         return table;
+    }
+    
+    public int updatequery(String queryString) throws ClassNotFoundException, SQLException{
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection con = DriverManager.getConnection(
+                "jdbc:mysql://localhost:3306/telecom", "root", "");
+
+        Statement stmt = con.createStatement();
+        int result = stmt.executeUpdate(queryString);
+        
+        return result;
     }
 
 }
