@@ -74,14 +74,16 @@ public class RmiClient extends HttpServlet {
                 e.printStackTrace();
                 System.exit(1);
             }
-
+            String info = "";
             if (response_rmi) {
-                request.setAttribute("number", start + number);
-                RequestDispatcher dispatcher = request.getRequestDispatcher("show_info.jsp");
-                dispatcher.forward(request, response);
+                info = "<p> This is your phone number : <b>" + start + number + "</b></p><p>Login with this number and password given earlier</p>";
+
             } else {
-                out.print("Some Error Occurred");
+                info = "Some Error Occurred";
             }
+            request.setAttribute("info", info);
+            RequestDispatcher dispatcher = request.getRequestDispatcher("show_info.jsp");
+            dispatcher.forward(request, response);
         }
     }
 

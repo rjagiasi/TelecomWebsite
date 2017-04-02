@@ -8,12 +8,10 @@
 
 <%@ include file="header.jsp" %>
 
-<p> This is your phone number : <b>
-<%
-    out.println(request.getAttribute("number"));
-%>
-</b></p>
 
-<p>Login with this number and password given earlier</p>
+<%
+    out.println(request.getAttribute("info"));
+%>
+
 
 <%@ include file="footer.jsp" %>

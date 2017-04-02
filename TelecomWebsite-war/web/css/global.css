@@ -9,11 +9,11 @@ and open the template in the editor.
 */
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 form input, textarea{
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .row{
@@ -21,113 +21,119 @@ form input, textarea{
 }
 
 .row::after {
-	content: "";
-	clear: both;
-	display: block;
+    content: "";
+    clear: both;
+    display: block;
 }
 
 [class*="col-"] {
-	float: left;
-	padding: 15px;
+    float: left;
+    padding: 15px;
 }
 
 body {
-	font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 header {
-	background-color: #3f51b5;
-	color: #ffffff;
-	padding: 20px;
-	padding-left: 80px;
-	text-align: left;
-        height: 25vh;
-        max-height: 105px;
+    background-color: #3f51b5;
+    color: #ffffff;
+    padding: 20px;
+    padding-left: 80px;
+    text-align: left;
+    height: 25vh;
+    max-height: 105px;
 }
 
 .menu {
-	background-color: #c5cae9;
-        
+    background-color: #c5cae9;
+
 }
 
 .menu ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .menu li {
-	padding: 20px;
-	text-align: center;
-	background-color: #7986cb;
-	color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    background-color: #7986cb;
+
+}
+
+.menu li a{
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .menu li:hover {
-	background-color: #3f51b5;
+    background-color: #3f51b5;
 }
 
 main {
-	background-color: #E0E0E0;
+    background-color: #E0E0E0;
 }
 
 footer {
-	background-color: #263238;
-	color: #ffffff;
-	text-align: center;
-	font-size: 12px;
-	padding: 15px;
-        height: 18vh;
-        max-height: 80px
+    background-color: #263238;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    height: 18vh;
+    max-height: 80px
 }
 
 .col-1 {
-	width: 8.33%;
+    width: 8.33%;
 }
 
 .col-2 {
-	width: 16.66%;
+    width: 16.66%;
 }
 
 .col-3 {
-	width: 25%;
+    width: 25%;
 }
 
 .col-4 {
-	width: 33.33%;
+    width: 33.33%;
 }
 
 .col-5 {
-	width: 41.66%;
+    width: 41.66%;
 }
 
 .col-6 {
-	width: 50%;
+    width: 50%;
 }
 
 .col-7 {
-	width: 58.33%;
+    width: 58.33%;
 }
 
 .col-8 {
-	width: 66.66%;
+    width: 66.66%;
 }
 
 .col-9 {
-	width: 75%;
+    width: 75%;
 }
 
 .col-10 {
-	width: 83.33%;
+    width: 83.33%;
 }
 
 .col-11 {
-	width: 91.66%;
+    width: 91.66%;
 }
 
 .col-12 {
-	width: 100%;
+    width: 100%;
 }
+
 
 
 #middle_section, nav, #feed{
@@ -135,42 +141,42 @@ footer {
 }
 
 @media screen and (max-width: 840px) {
-	[class*="col-m-"] {
-		float: left;
-		padding: 15px;
-	}
-	.col-m-1 {
-		width: 25%;
-	}
-	.col-m-2 {
-		width: 75%;
-	}
-	
-	header {
-		padding-left: 0px;
-		text-align: center;
-	}
-        #middle_section, nav, footer{
-            min-height: unset;
-            
-        }
-/*        .row{
-            display: unset;
-        }*/
-    
+    [class*="col-m-"] {
+        float: left;
+        padding: 15px;
+    }
+    .col-m-1 {
+        width: 25%;
+    }
+    .col-m-2 {
+        width: 75%;
+    }
+
+    header {
+        padding-left: 0px;
+        text-align: center;
+    }
+    #middle_section, nav, footer{
+        min-height: unset;
+
+    }
+    /*        .row{
+                display: unset;
+            }*/
+
 }
 
 @media screen and (max-width: 480px) {
-	[class*="col-"] {
-		width: 100%;
-	}
-        #middle_section, nav, footer{
-            height: unset;
-            max-height: unset;
-        }
-        .row{
-            display: unset;
-        }
+    [class*="col-"] {
+        width: 100%;
+    }
+    #middle_section, nav, footer{
+        height: unset;
+        max-height: unset;
+    }
+    .row{
+        display: unset;
+    }
 }
 
 

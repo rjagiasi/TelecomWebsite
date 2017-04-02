@@ -32,20 +32,35 @@
                                     found = 1;
                     %>
                     <li><a href="Logout">Logout</a></li>
+                    <li><a href="home.jsp">Dashboard</a></li>
                         <%
+                            }
+
+                            if (cookie.getName().equals("pre_post")) {
+                                if (Integer.parseInt(cookie.getValue()) == 0) {
+                        %>
+                    <li><a href="Recharge">Recharge</a></li>
+                        <%
+                        } else {
+                        %>
+                    <li><a href="Bill">Bill Payment</a></li>
+                    <%
                                     }
                                 }
-                            }
 
-                            if (found == 0) {
-                        %>
+                            }
+                        }
+
+                        if (found == 0) {
+                    %>
                     <li><a href="index.jsp">Login</a></li>
+                    <li><a href="register.jsp">New Connection</a></li>
                         <%
                             }
                         %>
 
 
-                    <li><a href="register.jsp">New Connection</a></li>
+
                     <!--				<li>Prepaid</li>
                                                     <li>Postpaid</li>
                                                     <li>My Account</li>
