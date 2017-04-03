@@ -32,16 +32,14 @@ public class Logout extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
+//        response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            Cookie[] cookies = null;
-            cookies = request.getCookies();
-            
-            for (Cookie cookie : cookies) {
+            for (Cookie cookie : request.getCookies()) {
                 cookie.setMaxAge(0);
                 response.addCookie(cookie);
             }
             response.sendRedirect("index.jsp");
+            
         }
     }
 

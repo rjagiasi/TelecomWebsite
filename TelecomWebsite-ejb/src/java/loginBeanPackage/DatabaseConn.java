@@ -12,7 +12,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  *
@@ -42,7 +41,7 @@ public class DatabaseConn {
         }
 
         con.close();
-        System.out.println(Arrays.deepToString(table.toArray()));
+//        System.out.println(Arrays.deepToString(table.toArray()));
         return table;
     }
     
