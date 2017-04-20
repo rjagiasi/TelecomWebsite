@@ -39,7 +39,7 @@
                             if (cookie.getName().equals("pre_post")) {
                                 if (Integer.parseInt(cookie.getValue()) == 0) {
                         %>
-                    <li><a href="Recharge">Recharge</a></li>
+                    <li><a href="recharge.jsp">Recharge</a></li>
                         <%
                         } else {
                         %>
