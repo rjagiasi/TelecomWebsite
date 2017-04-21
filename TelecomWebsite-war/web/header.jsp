@@ -15,7 +15,8 @@
     <body>
 
         <header>
-            <h1>Telecom</h1>
+            <h1 style="display: inline-block;">Telecom</h1>
+            <img src="imgs/logo.png" alt="Logo" id="logo" />
         </header>
 
         <div class="row" id="middle_section">
@@ -44,15 +45,15 @@
                         } else {
                         %>
                     <li><a href="Bill">Bill Payment</a></li>
-                    <%
+                        <%
+                                        }
                                     }
+
                                 }
-
                             }
-                        }
 
-                        if (found == 0) {
-                    %>
+                            if (found == 0) {
+                        %>
                     <li><a href="index.jsp">Login</a></li>
                     <li><a href="register.jsp">New Connection</a></li>
                         <%
