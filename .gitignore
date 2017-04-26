@@ -1,2 +1,10 @@
 /build/
 /TelecomWebsite-war/src/java/constants/ProjectDetails.java
+/nbproject/private/
+/dist/
+/TelecomWebsite-war/nbproject/private/
+/TelecomWebsite-war/dist/
+/TelecomWebsite-war/build/
+/TelecomWebsite-ejb/nbproject/private/
+/TelecomWebsite-ejb/build/
+/TelecomWebsite-ejb/dist/
