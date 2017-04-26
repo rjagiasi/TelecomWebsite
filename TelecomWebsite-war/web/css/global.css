@@ -153,8 +153,6 @@ footer {
         text-align: center;
     }
     #middle_section, nav, footer{
-        min-height: unset;
-
     }
     /*        .row{
                 display: unset;
@@ -167,8 +165,6 @@ footer {
         width: 100%;
     }
     #middle_section, nav, footer{
-        height: unset;
-        max-height: unset;
     }
     .row{
         display: unset;

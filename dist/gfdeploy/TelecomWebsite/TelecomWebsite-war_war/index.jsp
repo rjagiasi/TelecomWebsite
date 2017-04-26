@@ -14,12 +14,51 @@
         }
     }
 %>
-<form action="LoginServlet" method="post">
-    <label for="username" class="col-4"><b>Phone No : </b></label>
-    <input type="text" name="username" id="username" class="col-8" placeholder="Phone Number">
-    <label for="password" class="col-4"><b>Password :</b></label>
-    <input type="password" name="password" id="password" class="col-8" placeholder="Password"><br><br>
-    <input type="submit" value="Login" class="col-12">
-</form>
+<div class="col-8">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="imgs/adv1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="imgs/adv2.png" style="width:100%">
+        </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000);
+}
+</script>
+
+<div class="col-4">
+    <form action="LoginServlet" method="post">
+        <input type="text" name="username" id="username" class="col-12" placeholder="Phone Number">
+        <input type="password" name="password" id="password" class="col-12" placeholder="Password"><br><br>
+        <input type="submit" value="Login" class="col-12">
+    </form>
+</div>
+
 <%@ include file="footer.jsp" %>
 
