@@ -14,7 +14,9 @@
     <body>
 
         <header>
-            <h1 style="display: inline-block;">Telecom</h1>
+            <h1 style="display: inline-block; padding: 5px;">
+                <a href="index.jsp">Telecom</a>
+            </h1>
             <img src="imgs/logo.png" alt="Logo" id="logo" />
         </header>
 

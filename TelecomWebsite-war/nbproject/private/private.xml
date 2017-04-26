@@ -4,12 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Shubham/Documents/NetBeansProjects/TelecomWebsite2/TelecomWebsite-war/web/home.jsp</file>
-            <file>file:/C:/Users/Shubham/Documents/NetBeansProjects/TelecomWebsite2/TelecomWebsite-war/web/header.jsp</file>
-            <file>file:/C:/Users/Shubham/Documents/NetBeansProjects/TelecomWebsite2/TelecomWebsite-war/web/recharge.jsp</file>
+            <file>file:/C:/Users/Shubham/Documents/NetBeansProjects/TelecomWebsite2/TelecomWebsite-war/web/css/global.css</file>
             <file>file:/C:/Users/Shubham/Documents/NetBeansProjects/TelecomWebsite2/TelecomWebsite-war/web/index.jsp</file>
-            <file>file:/C:/Users/Shubham/Documents/NetBeansProjects/TelecomWebsite2/TelecomWebsite-war/src/java/constants/ProjectDetails.java</file>
-            <file>file:/C:/Users/Shubham/Documents/NetBeansProjects/TelecomWebsite2/TelecomWebsite-war/web/contact.jsp</file>
-            <file>file:/C:/Users/Shubham/Documents/NetBeansProjects/TelecomWebsite2/TelecomWebsite-war/web/footer.jsp</file>
+            <file>file:/C:/Users/Shubham/Documents/NetBeansProjects/TelecomWebsite2/TelecomWebsite-war/src/java/login/LoginServlet.java</file>
         </group>
     </open-files>
 </project-private>

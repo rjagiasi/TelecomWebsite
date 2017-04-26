@@ -14,14 +14,14 @@
         }
     }
 %>
-<div class="col-8">
+<div class="col-9 col-m-2">
     <div class="slideshow-container">
         <div class="mySlides fade">
-            <img src="imgs/adv1.png" style="width:100%">
+            <img src="imgs/advone.png" class="advertise" style="width:100%">
         </div>
 
         <div class="mySlides fade">
-            <img src="imgs/adv2.png" style="width:100%">
+            <img src="imgs/advtwo.png" class="advertise" style="width:100%">
         </div>
     </div>
     <br>
@@ -42,17 +42,17 @@ function showSlides() {
        slides[i].style.display = "none";  
     }
     slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}    
+    if (slideIndex> slides.length) {slideIndex = 1;}    
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000);
+    setTimeout(showSlides, 3000);
 }
 </script>
 
-<div class="col-4">
+<div class="col-3 col-m-2">
     <form action="LoginServlet" method="post">
         <input type="text" name="username" id="username" class="col-12" placeholder="Phone Number">
         <input type="password" name="password" id="password" class="col-12" placeholder="Password"><br><br>

@@ -11,16 +11,6 @@
 <%@page import="loginBeanPackage.LoginSessionBean"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ include file="header.jsp" %>
-<style>
-    
-    #pack_details_table tr th, td{
-        padding: 20px;
-    }
-    #pack_details_div{
-        overflow: auto;
-    }
-    
-</style>
 <%    Cookie[] cookies_list = null;
     cookies_list = request.getCookies();
     int pre_post = 0;
@@ -46,7 +36,7 @@
     if (cookie.getName().equals("name")) {
         found_cookie = 1;
 %>
-<p id="p_name">Name: <%=cookie.getValue()%></p>
+<p id="loggedin_username">Name: <%=cookie.getValue()%></p>
 <%
         }
     }
@@ -97,7 +87,7 @@
 
                 if (i == 4) {
                     var packs = children[i].getElementsByTagName('Pack');
-                    txt += "<br/><p><b>" + children[i].tagName.replace(/_/g, " ") + "</b></p><br/>";
+                    txt += "<br/><p style=\"font-size: 20px; color: #01579B;\">" + children[i].tagName.replace(/_/g, " ") + "</p>";
 
                     txt += "<div id=\"pack_details_div\"><table id = \"pack_details_table\"><tr>";
 
